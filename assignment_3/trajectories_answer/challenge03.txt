@@ -1,0 +1,10 @@
+Task1
+
+1. The reconstruction error will accumulate, so that the estimated path would be more far away as the time goes by.The time step of kitti dataset is quite small, leading each consecutive frame differ subtly. In consequence, the reconstruction error would not accumulate rapidly and thus getting good matches.
+2. Estimating homography matrix instead, which could also be decomposed into R and T.
+
+Task2
+Pro: corresponding background models need not be constant, they change overtime.
+     Easy to implement
+Con: Accuracy of frame differencing depends on object speed and frame rate
+     Relative high memory requirements
